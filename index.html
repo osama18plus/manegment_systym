@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="keywordes" content=""/>
+        <meta name="discription" content=""/>
+        <meta name="viewport" content="width=devicewidth,ini-tial-scale=l"/>
+        <title>Product management system</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap">
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <!-- <link rel="stylesheet" href="css/fontawesome.min.css"/> -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body id="body">
+        <div class="crud">
+            <div class="head">
+                <!-- <div class="lightemood">
+                    <button onclick="lighte()" id="lightedark">lighte mood</button>
+                </div> -->
+                <h2 id="curd">curd</h2>
+                <p id="pharagraf">product management system</p>
+            </div><!--./head-->
+            <div class="inputs">
+                <input placeholder="name" type="text" id="name">
+                <div class="price">
+                    <input onkeyup="gettotal()" type="number" placeholder="price" id="price">
+                    <input onkeyup="gettotal()" type="date" value="0000-00-00" placeholder="date" id="date">
+                    <input onkeyup="gettotal()" type="number" placeholder="ads" id="ads">
+                    <input onkeyup="gettotal()" type="number" placeholder="discount" id="discount">
+                    <small onkeyup="gettotal()" id="total"></small>
+                </div><!--price-->
+                <input type="number" placeholder="count" id="count">
+                <input type="text" placeholder="category" id="category">
+                <button id="submit">create</button>
+            </div><!--./inputs-->
+            <div class="outputs">
+                <div class="searchblock">
+                    <input onkeyup="searchData(this.value)" id="search" type="text" placeholder="search">
+                    <div class="btnsearch">
+                        <button onclick="getsearchmood(this.id)" id="searchname">search by name</button>
+                        <button onclick="getsearchmood(this.id)" id="searchcategory">search by category</button>
+                    </div>
+                </div>
+                <div id="deleteAll">
+
+                </div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>date</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delate</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                        
+                    </tbody>
+                </table>
+
+            </div><!--./outputs-->
+        </div><!--./cued-->
+        
+    <script src="js/script.js"></script>
+    </body>
+</html>
